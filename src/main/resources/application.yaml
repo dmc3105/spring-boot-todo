@@ -6,6 +6,3 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
-  thymeleaf:
-    prefix: /WEB-INF/templates/
-    suffix: .html
