@@ -21,6 +21,7 @@
                         class="form-control"
                         id="title_input"
                         required
+                        autofocus
                 />
                 <div class="invalid-feedback">Task must have title</div>
             </div>
@@ -55,13 +56,14 @@
                 <label for="status_input" class="form-label">
                     Status
                 </label>
-                <select name="color" class="form-select">
-                    <option th:each="status : ${taskStatuses}"
-                            th:value="${status}"
-                            th:text="${status.toString().toLowerCase()}"
-                            th:selected="${defaultTaskStatus}";
-                            type="status"
-                            id="status_input"
+                <select class="form-select" id="status_input" th:field="*{status}">
+                    <option
+                            th:value="${T(com.dmc3105.todo.model.TaskStatus).UNCOMPLETED}"
+                            th:text="Uncomplited"
+                    ></option>
+                    <option
+                            th:value="${T(com.dmc3105.todo.model.TaskStatus).COMPLETED}"
+                            th:text="Completed"
                     ></option>
                 </select>
             </div>
