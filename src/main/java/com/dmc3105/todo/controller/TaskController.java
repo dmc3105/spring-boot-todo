@@ -4,6 +4,7 @@ import com.dmc3105.todo.model.Task;
 import com.dmc3105.todo.model.TaskStatus;
 import com.dmc3105.todo.service.TaskService;
 import lombok.AllArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -34,9 +35,15 @@ public class TaskController {
         return "redirect:/tasks";
     }
 
-    @GetMapping("/delete/{id}")
-    public String delete(@PathVariable("id") Long id) {
+    @PostMapping("toggle_status/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public void toggleStatus(@PathVariable("id") Long id) {
+        service.toggleStatus(id);
+    }
+
+    @DeleteMapping("/delete/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public void delete(@PathVariable("id") Long id) {
         service.deleteTask(id);
-        return "redirect:/tasks";
     }
 }
