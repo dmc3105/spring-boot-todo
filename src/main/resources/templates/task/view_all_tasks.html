@@ -32,7 +32,7 @@
             <a type="button" class="btn btn-danger task-btn-delete">
               Delete
             </a>
-            <a type="button" class="btn btn-primary">
+            <a type="button" class="btn btn-primary" th:href="@{/tasks/edit/{id} (id = ${task.id})}">
               Edit
             </a>
             <a

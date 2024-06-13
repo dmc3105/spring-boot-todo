@@ -29,6 +29,12 @@ public class TaskController {
         return "task/create_new_task";
     }
 
+    @GetMapping("/edit/{id}")
+    public String edit(Model model, @PathVariable Long id) {
+        model.addAttribute("task", service.findTask(id));
+        return "task/edit_task";
+    }
+
     @PostMapping("")
     public String save(@ModelAttribute Task task) {
         service.saveTask(task);
