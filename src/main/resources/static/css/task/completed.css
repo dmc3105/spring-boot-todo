@@ -1,0 +1,7 @@
+.task-card[class~="completed"]{
+    background-color: rgb(154, 164, 171) !important;
+}
+
+.task-card[class~="completed"] > .task-card-body {
+    text-decoration: line-through;
+}
