@@ -1,6 +1,7 @@
 package com.dmc3105.todo.service;
 
 import com.dmc3105.todo.model.Task;
+import com.dmc3105.todo.model.TaskStatus;
 import com.dmc3105.todo.repository.TaskRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -30,6 +31,20 @@ public class TaskServiceImpl implements TaskService {
     @Override
     public Task updateTask(Task task) {
         return repository.save(task);
+    }
+
+    @Override
+    public TaskStatus toggleStatus(Long id) {
+        Task task = repository.findById(id).get();
+
+        if (task.getStatus() != TaskStatus.UNCOMPLETED) {
+            task.setStatus(TaskStatus.UNCOMPLETED);
+        } else if (task.getStatus() != TaskStatus.COMPLETED) {
+            task.setStatus(TaskStatus.COMPLETED);
+        }
+
+        repository.save(task);
+        return task.getStatus();
     }
 
     @Override
