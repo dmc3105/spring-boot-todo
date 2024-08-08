@@ -1,5 +1,5 @@
 [![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/dmc3105/spring-boot-todo/edit/master/readme.md)
-[![en](https://img.shields.io/badge/lang-ru-blue.svg)](https://github.com/dmc3105/spring-boot-todo/edit/master/readme.ru.md)
+[![ru](https://img.shields.io/badge/lang-ru-blue.svg)](https://github.com/dmc3105/spring-boot-todo/edit/master/readme.ru.md)
 # To Do от dmc3105
 ![image info](./screenshot.png)
 "To do by dmc3105" - это веб-приложение, которое использует рендеринг на стороне сервера и реализует CRUD-операции для отслеживания списка задач
