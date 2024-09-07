@@ -12,10 +12,6 @@ Apache Maven 3.9.6
 MySQL Community Server Ver 8.0.37
 ***
 ## Build and Run
-
-### Database creation
-You can use **create.sql** script to create database and tables
-### Running using spring-boot
 ``
-.\mvnw spring-boot:run
+docker compose up --build -d
 ``
