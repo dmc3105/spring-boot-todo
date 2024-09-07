@@ -3,7 +3,7 @@ services:
     build:
       context: .
     ports:
-      - 80:80
+      - 8080:8080
     networks:
       - db
     depends_on:
