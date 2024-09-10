@@ -1,4 +1,4 @@
-package com.dmc3105.todo;
+package ru.dmc3105.todo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,4 +1,4 @@
-package com.dmc3105.todo.model;
+package ru.dmc3105.todo.model;
 
 import jakarta.persistence.*;
 import lombok.Data;

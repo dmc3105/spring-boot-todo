@@ -1,8 +1,8 @@
-package com.dmc3105.todo.controller;
+package ru.dmc3105.todo.controller;
 
-import com.dmc3105.todo.model.Task;
-import com.dmc3105.todo.model.TaskStatus;
-import com.dmc3105.todo.service.TaskService;
+import ru.dmc3105.todo.model.Task;
+import ru.dmc3105.todo.model.TaskStatus;
+import ru.dmc3105.todo.service.TaskService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;

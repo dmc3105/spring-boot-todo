@@ -58,11 +58,11 @@
                 </label>
                 <select class="form-select" id="status_input" th:field="*{status}">
                     <option
-                            th:value="${T(com.dmc3105.todo.model.TaskStatus).UNCOMPLETED}"
+                            th:value="${T(ru.dmc3105.todo.model.TaskStatus).UNCOMPLETED}"
                             th:text="Uncomplited"
                     ></option>
                     <option
-                            th:value="${T(com.dmc3105.todo.model.TaskStatus).COMPLETED}"
+                            th:value="${T(ru.dmc3105.todo.model.TaskStatus).COMPLETED}"
                             th:text="Completed"
                     ></option>
                 </select>

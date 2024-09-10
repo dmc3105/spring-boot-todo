@@ -1,4 +1,4 @@
-package com.dmc3105.todo;
+package ru.dmc3105.todo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

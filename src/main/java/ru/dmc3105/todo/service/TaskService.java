@@ -1,7 +1,7 @@
-package com.dmc3105.todo.service;
+package ru.dmc3105.todo.service;
 
-import com.dmc3105.todo.model.Task;
-import com.dmc3105.todo.model.TaskStatus;
+import ru.dmc3105.todo.model.Task;
+import ru.dmc3105.todo.model.TaskStatus;
 
 import java.util.List;
 
